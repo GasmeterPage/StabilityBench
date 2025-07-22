@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Run Flask Backend",
+			"command": "\"C:/Users/H603390/OneDrive - Honeywell/Desktop/Vanisree/Stabilitybench_Webpage/StabilityBench/.venv/Scripts/python.exe\" app.py",
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

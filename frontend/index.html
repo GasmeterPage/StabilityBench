@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StabilityBench Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <button onclick="showPage('meters')">Meter Details</button>
+        <button onclick="showPage('preview')">Preview Values</button>
+        <button onclick="showPage('plot')">Graph Plotting</button>
+    </nav>
+    <main>
+        <section id="meters" class="page">
+            <h2>Meter Details</h2>
+            <div id="meter-details"></div>
+        </section>
+        <section id="preview" class="page" style="display:none">
+            <h2>Preview Values</h2>
+            <div id="preview-values"></div>
+        </section>
+        <section id="plot" class="page" style="display:none">
+            <h2>Graph Plotting</h2>
+            <canvas id="meterChart" width="400" height="200"></canvas>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
